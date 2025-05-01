@@ -44,7 +44,7 @@ if st.button("Download"):
 
             if download_type == "Merged (Audio + Video)":
                 ydl_opts.update({
-                    'ffmpeg_location': '/usr/bin/ffmpeg',
+                    'ffmpeg_location': './ffmpeg',
                     'merge_output_format': 'mp4'
                 })
 

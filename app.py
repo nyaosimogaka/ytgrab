@@ -5,7 +5,7 @@ import os
 import glob
 
 # Ensure ffmpeg is executable
-os.chmod('./ffmpeg', 0o755)
+# os.chmod('./ffmpeg', 0o755)
 
 st.title("YouTube Downloader")
 
@@ -44,7 +44,7 @@ if st.button("Download"):
 
             if download_type == "Merged (Audio + Video)":
                 ydl_opts.update({
-                    'ffmpeg_location': './ffmpeg',
+                    # 'ffmpeg_location': './ffmpeg',
                     'merge_output_format': 'mp4'
                 })
 
